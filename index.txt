@@ -1,0 +1,41 @@
+INSERT INTO dojos (name)
+VALUES ("HTML Dojo"), 
+("CSS Dojo"),
+("Javascript Dojo");
+
+///// I wanted to stay in safe mode /////
+DELETE FROM dojos
+WHERE dojos.id <= 3;
+
+INSERT INTO dojos (name)
+VALUES ("Python Dojo"),
+("Java Dojo"),
+("C++ Dojo");
+
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) 
+VALUES ("Katie", "Kavanagh", 24, 4),
+("Nicholas", "Bowman", 25, 4),
+("Malcolm", "McCat", 2, 4);
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES ("Dennis", "McCat", 2, 5),
+("Lebron", "James", 36, 5),
+("Nicholas", "Cage", 44, 5);
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES ("Tiger", "Woods", 41, 6),
+("Robert", "Pattinson", 35, 6),
+("Dennis", "Rodman", 56, 6);
+
+SELECT *
+FROM ninjas
+WHERE dojo_id=4;
+
+SELECT *
+FROM ninjas
+WHERE dojo_id=6
+
+SELECT dojo_id
+FROM ninjas
+WHERE id=9;
